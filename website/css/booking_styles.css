@@ -1,0 +1,221 @@
+.content2{
+  padding-top:30px;
+  padding-bottom:30px;
+  max-width:750px;
+  margin:auto;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  color:inherit;
+}
+.betweenbg{
+  width: 100%;
+  margin: auto;
+  border: none;
+  height: 100%;
+  max-height: 100vh;
+}
+.bgimg-1{
+  background-image:url(../imagens/place1.jpg);
+  min-height:100%
+}
+.bgimg-2{
+  background-image:url(../imagens/place2.jpg);
+  min-height:400px
+}
+.bgimg-3{
+  background-image:url(../imagens/place3.jpg);
+  min-height:400px
+}
+@-webkit-keyframes move_eye { from {opacity: 0.5;} to {opacity: 1;}  }
+@keyframes move_eye { from {opacity: 0.5;} to {opacity: 1;}  }
+@-webkit-keyframes blackup {
+  0% {background-color:rgba(0, 0, 0, 0.65);color:inherit;}
+  10% {background-color:rgba(0, 0, 0, 1);color:inherit;}
+  95% {background-color:rgba(0, 0, 0, 1);color:inherit;}
+}
+@keyframes blackup {
+  0% {background-color:rgba(0, 0, 0, 0.65);color:inherit;}
+  10% {background-color:rgba(0, 0, 0, 1);color:inherit;}
+  95% {background-color:rgba(0, 0, 0, 1);color:inherit;}
+}
+.split {
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  overflow-x: hidden;
+  display: inline-block;
+}
+.left{
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.65);
+  color:inherit;
+}
+.left:hover{
+  color:inherit;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.5);
+  -webkit-animation: 20s linear 0s infinite  blackup;
+  animation: 20s linear 0s infinite   blackup;
+}
+.center {
+  top:0;
+  left:33.5%;
+  background-color:rgba(0, 0, 0, 0.65);
+  color:inherit;
+}
+.center:hover{
+  -webkit-animation: 20s linear 0s infinite  blackup;
+  animation: 20s linear 0s infinite   blackup;
+}
+.right {
+  right: 0;
+  background-color:rgba(0, 0, 0, 0.65);
+  color:white;
+}
+.right:hover{
+  -webkit-animation: 20s linear 0s infinite  blackup;
+  animation: 20s linear 0s infinite   blackup;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tablecenter{
+  text-align:center;
+}
+table, td
+{
+  border: 1px solid white;
+  color:white;
+  background-color:transparent;
+}
+table
+{
+  border-collapse: collapse;
+}
+th, td
+{
+  text-align: left;
+}
+td:hover {background-color: silver; color:black}
+th
+{
+  border: 1px solid white;
+  background-color: lightblue;
+  color:black;
+}
+ul {
+  list-style-type: none;
+  margin: 5%;
+  font-family:Oswald,sans-serif;
+  font-weight:400;
+  font-size:100%;
+  text-align:justify;
+  padding:0;
+  z-index:1;
+  position:relative;
+  color:#fff;
+  background-color: transparent;
+}
+ul.ulright{
+  list-style-type: none;
+  margin: 0%;
+  font-family:Oswald,sans-serif;
+  font-weight:400;
+  font-size:16px;
+  text-align:justify;
+  padding-left:20%;
+  padding-right:20%;
+  padding-top: 30%;
+  padding-bottom: 0%;
+  z-index:1;
+  position:relative;
+  color:#fff;
+  background-color: transparent;
+}
+.li1 {
+  background:url('li1.gif') 50% 50% no-repeat no-repeat;
+  padding-left: 5px;
+}
+.li2 {
+  background:url('li2.gif') 50% 50% no-repeat no-repeat;
+  padding-left: 5px;
+}
+.verticalFlip
+{
+  position: relative;
+  display: inline-block;
+  font-family:Arvo,sans-serif;
+  font-weight:400;
+  font-size:40px;
+  text-align:center;
+  color:#fff;
+  margin:0;
+  padding:0;
+  background-color:transparent;
+}
+.verticalFlip span
+{
+  animation: vertical 10s linear infinite 0s;
+  -ms-animation: vertical 10s linear infinite 0s;
+  -webkit-animation: vertical 10s linear infinite 0s;
+  color: #00abe9;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  background-color:inherit;
+}
+@-moz-keyframes vertical
+{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: rotateX(180deg); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 1; -moz-transform: translateY(0px); }
+  80% { opacity: 1; }
+  100% { opacity: 1;}
+}
+.th{
+  font-family:Oswald,sans-serif;
+  font-weight:400;
+  font-size:16px;
+  text-align:center;
+  margin:5px 0;
+  padding:0;
+  z-index:1;
+  position:relative;
+  color:black;
+  background-color: transparent;
+}
+.silver{
+  color:silver;
+  background-color: transparent;
+}
+.gold{
+  color:gold;
+  background-color: transparent;
+}
+.legend1{
+  text-align:center;
+}
+.legend1,.legend2{
+  color:white;
+  background-color: transparent;
+}
+#bk1{
+
+  background-image:url(../imagens/wall5.jpg);
+}
+#bk2{
+  background-image:url(../imagens/wall6.jpg);
+}
+#navbar{
+  z-index:2;
+}

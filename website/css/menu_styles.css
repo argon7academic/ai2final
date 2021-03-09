@@ -1,0 +1,230 @@
+.bgimg-1{
+  background-image:url(../imagens/sushi10.jpg);
+  min-height:100%
+}
+.bgimg-2{
+  background-image:url(../imagens/sushi9.JPG);
+  min-height:400px
+}
+.bgimg-3{
+  background-image:url(../imagens/sushi7.png);
+  min-height:400px
+}
+@-moz-keyframes leftToRight
+{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateX(-50px); }
+  10% { opacity: 1; -moz-transform: translateX(0px); }
+  25% { opacity: 1; -moz-transform: translateX(0px); }
+  30% { opacity: 0; -moz-transform: translateX(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes leftToRight
+{
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateX(-50px); }
+  10% { opacity: 1; -webkit-transform: translateX(0px); }
+  25% { opacity: 1; -webkit-transform: translateX(0px); }
+  30% { opacity: 0; -webkit-transform: translateX(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes leftToRight
+{
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateX(-50px); }
+  10% { opacity: 1; -ms-transform: translateX(0px); }
+  25% { opacity: 1; -ms-transform: translateX(0px); }
+  30% { opacity: 0; -ms-transform: translateX(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes vertical
+{
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: rotateX(180deg); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 1; -moz-transform: translateY(0px); }
+  80% { opacity: 1; }
+  100% { opacity: 1;}
+}
+@keyframes slider_anim
+{
+  0%
+  {
+    transform: rotateY(+360deg);
+  }
+  100%
+  {
+    transform: rotateY(0deg);
+  }
+}
+.split2 {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  z-index: 0;
+  display: block;
+}
+.split3 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 0;
+  overflow:hidden;
+  display: block;
+}
+.left {
+  left: 0;
+  background-image:url("../imagens/menu/wall4.jpg");
+  z-index: -1;
+}
+.leftbot {
+  bottom: 0;
+  background-color: red;
+  border-radius: 15px 50px 30px;
+  border: 5px solid silver;
+  color:inherit;
+}
+@keyframes fups{
+  25%{
+    transform:translateX(-5rem)
+  }
+  75%{
+    transform:translateX(+5rem)
+  }
+}
+.lefttop {
+  left: 0;
+  top: 0;
+  background-color: #111;
+  border-radius: 15px 50px 30px;
+  border: 5px solid silver;
+  color:inherit;
+}
+.right {
+  right: 0;
+  z-index:-1;
+  background-image:url("../imagens/menu/wall3.jpg");
+
+}
+.rightbot {
+  color:inherit;
+  right: 0;
+  background-color: red;
+  bottom:0;
+  border-radius: 50px 15px  50px 30px ;
+  border: 5px solid silver;
+}
+.righttop {
+  right: 0;
+  top: 0;
+  background-color: #111;
+  border-radius: 50px 15px  50px 30px ;
+  border: 5px solid silver;
+  color:inherit;
+}
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  display:block;
+}
+.containert img {
+  margin: 0 auto 0 auto;
+  position: absolute;
+  width: 90vh;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img{
+  box-sizing: border-box;
+  overflow:hidden;
+  display:block;
+  border:solid 5px silver;
+  width:auto;
+}
+#slide{
+  border-radius: 10%;
+  border-radius: 100px 5px 100px  5px;
+}
+#slide2{
+  border-radius: 10%;
+  border-radius:  5px 100px  5px 100px ;
+}
+.prev,.next,.prev2,.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 3vh;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color:silver;
+  -webkit-animation: 3s ease-in 0s infinite alternate example;
+  animation: 3s ease-in 0s infinite  alternate example;
+  z-index:1;
+}
+@-webkit-keyframes example {
+  from {opacity: 0.5;} to {opacity: 1;}
+  from {background-color: grey ;} to {background-color:lightblue ;}
+}
+@keyframes example {
+  from {opacity: 0.5;} to {opacity: 1;}
+  from {background-color: grey ;} to {background-color: lightblue;}
+}
+.next,.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,.prev2:hover,.next:hover,.next2:hover {
+  opacity: 1;
+  -webkit-animation: 0.25s ease-in 0s infinite alternate example2;
+  animation: 0.25s ease-in 0s infinite  alternate example2;
+}
+@keyframes example2 {
+  from {background-color: white ;} to {background-color: silver;}
+  from {color: black ;} to {color: gold;}
+}
+@-webkit-keyframes example2 {
+  from {background-color: white ;} to {background-color: silver;}
+  from {color: black ;} to {color: gold;}
+}
+.food_text,.drink_text{
+  color:white;
+  font-size: 1vw;
+  text-align: justify;
+  padding-left:5vw;
+  padding-right: 5vw;
+  top:0;
+  position: relative;
+  background-color: inherit;
+}
+.food_cat,.drink_cat{
+  font-family:Arvo,sans-serif;
+  font-weight:400;
+  font-size:4vw;
+  text-align:center;
+  color:#fff;
+  background-color: inherit;
+  margin:0;
+  padding:0
+}
+.itadakimasu{
+  font-size: 40px;
+  text-align:center;
+  background-image:linear-gradient(to right,silver,gold);
+  color:black;
+  background-color: transparent;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="Stick(),clock(),myMap()">
+  <div data-role="page">
+    <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+    <link rel= "stylesheet" type= "text/css" href= "../css/about_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../codejs/code.js"></script>
+    <script src="../codejs/about_code.js"></script>
+    <script src="../jquery/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfvPBlJNc-JQidqrOTJwMv4RTTEleM3G8&callback=myMap"></script>
+    <div data-role="header">
+      <h1>Washoku</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div id="navbar">
+        <a href="./index.html" data-transition="slide">Home</a>
+        <a href="booking.html" data-transition="slide">Booking</a>
+        <a href="menu.html" data-transition="slide">Menu</a>
+        <a href="gallery.html" data-transition="slide">Gallery</a>
+        <a class="active" href="about.html" data-transition="slide">About</a>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <div class="info">
+        <h4>
+          Discover regional tastes & crafted beverages
+          In 1840, a man named James Maiden stopped on the banks of the Murray and saw great potential in the spot, at the junction of the Campaspe and Murray rivers.
+        </h4>
+        <br>
+        After building a ferry to cross the Murray, Maiden constructed a simple wooden inn on higher ground and began welcoming both travellers and settlers alike to share a drink and a meal together. It was a simple establishment and he named it accordingly—Washoku Koi no Yokan (Love of Food) .
+        Today, in the spirit of the man who hoped to bring the banks of a mighty river – and the people who called them home – a little closer together, Junction gathers locally sourced food, handpicked wines and refreshing craft beers to offer travellers from near and far.
+        The venue—like the area itself—is a place where the rustic charm of colonial days and the comfort of contemporary culture meet. It’s now the junction between timeless elegance and modern sophistication.
+      </div>
+      <a id ="locations"></a>
+      <div class="gmap">
+        <div id="googleMap"></div>
+        <h3 class="dir">WASHOKU<br>The fake-fakename, FakeTown<br>181 fake St. W. Fake, ON fake fake</h3>
+      </div>
+      <div class="opinion">
+        <div class="container">
+          <form>
+            <span class="otherspan">Whats your opinion on the website?</span>
+            <div class="row">
+              <div class="col-25">
+                <label class="rating">Rating</label>
+              </div>
+              <div class="col-75">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Radio buttons, mini, horizontal controlgroup:</legend>
+                  <input type="radio" name="a" id="a" value="a" checked="checked">
+                  <label for="a">1 star</label>
+                  <input type="radio" name="b" id="b" value="b">
+                  <label for="b">2 star</label>
+                  <input type="radio" name="c" id="c" value="c">
+                  <label for="c">3 star</label>
+                  <input type="radio" name="d" id="d" value="d">
+                  <label for="d">4 star</label>
+                  <input type="radio" name="e" id="e" value="e">
+                  <label for="e">5 star</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Opinion</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Please let us know if you think there is something we can improve upon..." ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+              <input type="Reset" value="reset">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="rate">
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p>4.1 average based on 254 reviews.</p>
+        <hr class="separate">
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div class="star_5">150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div class="star_4" >63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div class="star_3">15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div class="star_2">6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div class="star_1">20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer">
+      <div id="clock"></div>
+    </div>
+  </div>
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/about_code.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfvPBlJNc-JQidqrOTJwMv4RTTEleM3G8&callback=myMap"></script>
+</body>
+</html>

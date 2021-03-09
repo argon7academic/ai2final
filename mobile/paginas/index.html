@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="Stick(),clock()">
+  <div data-role="page">
+    <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+    <link rel= "stylesheet" type= "text/css" href= "../css/index_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../codejs/index_code.js"></script>
+    <script src="../jquery/jquery.js"></script>
+    <div data-role="header">
+      <h1>Washoku</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div id="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <div class="info">
+        <p>
+          Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through
+          centuries of social and economic changes. The traditional cuisine of Japan (和食 washoku) is based on
+          rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often
+          consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled,
+          but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light
+          batter, as tempura. Apart from rice, staples include noodles, such as soba and udon. Japan also has
+          many simmered dishes such as fish products in broth called oden, or beef in sukiyaki and nikujaga.
+
+          Dishes inspired by foreign food—in particular Chinese food like ramen, fried dumplings, and gyōza—as
+          well as foods like spaghetti, curry, and hamburgers have become adopted with variants for Japanese
+          tastes and ingredients. Historically, the Japanese shunned meat, but with the modernization of Japan
+          in the 1880s, meat-based dishes such as tonkatsu and yakiniku have become common. Japanese cuisine,
+          particularly sushi, has become popular throughout the world. In 2011, Japan overtook France in number
+          of Michelin-starred restaurants and has maintained the title since
+        </p>
+      </div>
+      <div class="info">
+        <div class="content">
+          <div class="grid">
+            <a href ="menu.html#food" data-ajax="false">
+              <figure class="effect-julia">
+                <img src="../imagens/food.jpg" alt="img21"/>
+                <figcaption>
+                  <h2>The <span>Food</span></h2>
+                  <div>
+                    <p>A true statement to the japanese</p>
+                    <p>Lost art of masterfull cooking</p>
+                    <p>Indefinetly perfected & refined</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href ="menu.html#drink" data-ajax="false">
+              <figure class="effect-julia">
+                <img src="../imagens/sake.jpg" alt="img22"/>
+                <figcaption>
+                  <h2>The <span>Drink</span></h2>
+                  <div>
+                    <p>Unbeknownst to most , making</p>
+                    <p>Spirits and Liquors are as much </p>
+                    <p>A japanese tradition as Irish </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class ="info">
+        <div class="content">
+          <div class="grid">
+            <a href ="booking.html#contact" data-ajax="false">
+              <figure class="effect-hera">
+                <img src="../imagens/contact.jpg" alt="img17"/>
+                <figcaption>
+                  <h2>Contact <span>us</span></h2>
+                </figcaption>
+              </figure>
+            </a>
+            <a href ="about.html#locations" data-ajax="false">
+              <figure class="effect-hera">
+                <img src="../imagens/locations.jpg" alt="img25"/>
+                <figcaption>
+                  <h2>Locations</h2>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer">
+      <div id="clock"></div>
+    </div>
+  </div>
+  <script src="../codejs/index_code.js"></script>
+  <script src="../jquery/jquery.js"></script>
+</body>
+</html>

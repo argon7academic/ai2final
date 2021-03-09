@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="Stick(),clock()">
+  <div data-role="page">
+    <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+    <link rel= "stylesheet" type= "text/css" href= "../css/booking_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../codejs/code.js"></script>
+    <script src="../codejs/booking_code.js"></script>
+    <script src="../jquery/jquery.js"></script>
+    <div data-role="header">
+      <h1>Washoku</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div id="navbar">
+        <a href="./index.html" data-transition="slide">Home</a>
+        <a class="active" href="booking.html" data-transition="slide">Booking</a>
+        <a href="menu.html" data-transition="slide">Menu</a>
+        <a href="gallery.html" data-transition="slide">Gallery</a>
+        <a  href="about.html" data-transition="slide">About</a>
+        <div class="progress-container" data-transition="slide">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <div class="info2">
+        <h2>Make a booking</h2>
+        <form autocomplete="on">
+          <fieldset>
+            <legend class="legend1">Please fill out the following for a booking</legend>
+            <table>
+              <tr>
+                <td>Name:</td>
+                <td><input type="text" name="nome" size="40" placeholder="first name" pattern="[^0-9]*"/> <br /></td>
+              </tr>
+              <tr>
+                <td>Last name:</td>
+                <td><input type="text" name="sobrenome" size="40" placeholder="last name" pattern="[^0-9]*"> <br /></td>
+              </tr>
+              <tr>
+                <td> E-mail:</td>
+                <td><input type="text" name="e-mail" size="40" placeholder="e-mail here"> <br /></td>
+              </tr>
+              <tr>
+                <td><label>Phone Number</label></td>
+                <td><input type="tel" name="phone" placeholder="9xx-xxx-xxx"
+                  pattern="[9][1,2,3,6][0-9]{7}|[9][1,2,3,6][0-9]-[0-9]{3}-[0-9]{3}|[9][1,2,3,6][0-9][ ][0-9]{3}[ ][0-9]{3}">
+                </td>
+              </tr>
+            </table>
+          </fieldset> <BR>
+            <fieldset>
+              <legend class="legend2">Special Requirements</legend>
+              <textarea rows="10" cols="100" placeholder="Write here">
+              </textarea> <BR>
+                <h3><input type="checkbox" name="special" value="special">Check the box if you have any requirement regarding the booking (ex: vegetarian only, no gluten, alergies,etc...). Fill out the details above.<br>
+                </h3></fieldset>
+              </form>
+              <label for="select-native-2">Booking type:</label>
+              <select name="select-native-2" id="select-native-2">
+                <option value="small">Degustation</option>
+                <option value="medium">Breakfast</option>
+                <option value="large">Brunch</option>
+                <option value="medium">Lunch</option>
+                <option value="large">Dinner</option>
+              </select>
+              <h3>Number of people</h3>
+              <p>
+                <input type="number" name="quantity" min="1" max="20">
+              </p>
+              <h3>Date</h3>
+              <p>
+                <input type="date">
+              </p>
+              <h3>Time</h3>
+              <p>
+                <input type="time" name="usr_time">
+              </p>
+              <h3>Confirm</h3>
+              <form>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </form>
+            </div>
+            <div class="info2">
+              <h2>–Opening time–</h2><br>
+              <table class="tablecenter" >
+                <tbody>
+                  <tr>
+                    <th>Time</th>
+                    <th>Hours</th>
+                    <th>Service</th>
+                    <th>Open/Closed</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Morning</td>
+                    <td rowspan="2">8h-12h</td>
+                    <td>Restaurant</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td>Bar</td>
+                    <td>Closed</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Afternoon</td>
+                    <td rowspan="2">14h-18h</td>
+                    <td>Restaurant</td>
+                    <td>Closed</td>
+                  </tr>
+                  <tr>
+                    <td>Bar</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Evening</td>
+                    <td rowspan="2">19h-24h</td>
+                    <td>Restaurant</td>
+                    <td>Open</td>
+                  </tr>
+                  <tr>
+                    <td>Bar</td>
+                    <td>Open</td>
+                  </tr>
+                </tbody></table>
+                <br>
+                <h2>–Catering–</h2>
+                <br>
+                <ul>
+                  <li>Attendance – 50 to 500 people</li>
+                  <li>Event Date – Can't book during all of August, December 20th to January 5th.  </li>
+                  <li>Event Location – Please Contact us </li>
+                  <li>Event Description – Weddings, Partys, Hotels. We do not cater for political events.</li>
+                  <li>Budget – minimum of twenty thousand USD</li>
+                  <li>For Booking: contact us </li>
+                </ul>
+                <a id ="contact"></a>
+                <ul>
+                  <li class="li1"><i class="fa fa-phone"></i>Contact the restaurant<br>+0 000 555 0000</li>
+                  <li class="li2"><i class="fa fa-mobile"></i>Contact the owner<br>+0 000 999 0000</li>
+                  <li class="li2"><i class="fa fa-envelope"></i>Restaurant Manager:<br> Jan.Stoeckmann@ritzcarlton.com</li>
+                  <li class="li1"><i class="fa fa-envelope"></i>Contact us: <br>info@washokurestaurant.com</li>
+                  <li class="li2"><i class="fa fa-envelope"></i>Restaurant Chef: <br>fakename.fake@reallyfake.com</li>
+                  <li class="li1"><i class="fa fa-compass"></i>WASHOKU<br>The fake-fakename, FakeTown<br>181 fake St. W. Fake, ON fake fake</li>
+                </ul>
+              </div>
+            </div>
+            <div data-role="footer">
+              <div id="clock"></div>
+            </div>
+          </div>
+          <script src="../codejs/code.js"></script>
+          <script src="../codejs/booking_code.js"></script>
+        </body>
+        </html>

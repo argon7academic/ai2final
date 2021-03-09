@@ -1,0 +1,168 @@
+.grid{
+  padding:2em 0 4em;
+}
+.grid figure{
+  position:relative;
+  float:left;
+  overflow:hidden;
+  margin:10px 1%;
+  min-width:320px;
+  max-width:480px;
+  max-height:360px;
+  width:48%;
+  height:auto;
+  cursor:pointer
+}
+.grid figure img{
+  position:relative;
+  display:block;
+  min-height:100%;
+  max-width:100%;
+  opacity:.8
+}
+.grid figure figcaption{
+  background-color: transparent;
+  padding:2em;
+  color:#fff;
+  text-transform:uppercase;
+  font-size:1.25em;
+}
+.grid figure figcaption,.grid figure figcaption>a{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%
+}
+figure.effect-julia img{
+  max-width:none;
+  height:400px;
+  -webkit-transition:opacity 1s,-webkit-transform 1s;
+  transition:opacity 1s,transform 1s;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden
+}
+figure.effect-julia figcaption{
+  text-align:left
+}
+figure.effect-julia h2{
+  position:relative;
+  padding:.5em 0
+}
+figure.effect-julia p{
+  display:inline-block;
+  margin:0 0 .25em;
+  padding:.4em 1em;
+  background:rgba(255,255,255,.9);
+  color:#2f3238;
+  text-transform:none;
+  font-weight:500;
+  font-size:75%;
+  -webkit-transition:opacity .35s,-webkit-transform .35s;
+  transition:opacity .35s,transform .35s;
+  -webkit-transform:translate3d(-360px,0,0);
+  transform:translate3d(-360px,0,0)
+}
+figure.effect-julia p:first-child{
+  -webkit-transition-delay:.15s;
+  transition-delay:.15s
+}
+figure.effect-julia p:nth-of-type(2){
+  -webkit-transition-delay:.1s;
+  transition-delay:.1s
+}
+figure.effect-julia p:nth-of-type(3){
+  -webkit-transition-delay:50ms;
+  transition-delay:50ms
+}
+figure.effect-julia:hover p:first-child{
+  -webkit-transition-delay:0s;
+  transition-delay:0s
+}
+figure.effect-julia:hover p:nth-of-type(2){
+  -webkit-transition-delay:50ms;
+  transition-delay:50ms
+}
+figure.effect-julia:hover p:nth-of-type(3){
+  -webkit-transition-delay:.1s;
+  transition-delay:.1s
+}
+figure.effect-julia:hover img{
+  opacity:.4;
+  -webkit-transform:scale3d(1.1,1.1,1);
+  transform:scale3d(1.1,1.1,1)
+}
+figure.effect-julia:hover p{
+  opacity:1;
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0)
+}
+figure.effect-hera{
+  background:#303fa9;
+  color:inherit;
+}
+figure.effect-hera h2{
+  font-size:158.75%
+}
+figure.effect-hera h2,figure.effect-hera p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transition:opacity .35s,-webkit-transform .35s;
+  transition:opacity .35s,transform .35s;
+  -webkit-transform:translate3d(-50%,-50%,0);
+  transform:translate3d(-50%,-50%,0);
+  -webkit-transform-origin:50%;
+  transform-origin:50%
+}
+figure.effect-hera figcaption::before{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:200px;
+  height:200px;
+  border:2px solid #fff;
+  content:'';
+  opacity:0;
+  -webkit-transition:opacity .35s,-webkit-transform .35s;
+  transition:opacity .35s,transform .35s;
+  -webkit-transform:translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+  transform:translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+  -webkit-transform-origin:50%;
+  transform-origin:50%
+}
+figure.effect-hera p{
+  width:100px;
+  text-transform:none;
+  font-size:121%;
+  line-height:2
+}
+figure.effect-hera p a{
+  color:#fff;
+  background-color: inherit;
+}
+figure.effect-hera p a:focus,figure.effect-hera p a:hover{
+  opacity:.6
+}
+figure.effect-hera:hover figcaption::before{
+  opacity:1;
+  -webkit-transform:translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+  transform:translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1)
+}
+figure.effect-hera:hover h2{
+  opacity:0;
+  -webkit-transform:translate3d(-50%,-50%,0) scale3d(.8,.8,1);
+  transform:translate3d(-50%,-50%,0) scale3d(.8,.8,1)
+}
+.bgimg-1{
+  background-image:url(../imagens/index/img_parallax.jpg);
+  min-height:100%
+}
+.bgimg-2{
+  background-image:url(../imagens/index/img_parallax2.jpg);
+  min-height:400px
+}
+.bgimg-3{
+  background-image:url(../imagens/index/img_parallax3.jpg);
+  min-height:400px
+}

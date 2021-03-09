@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="Stick(),foodslide(),clock()">
+  <div data-role="page">
+    <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+    <link rel= "stylesheet" type= "text/css" href= "../css/menu_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../codejs/code.js"></script>
+    <script src="../codejs/menu_code.js"></script>
+    <script src="../jquery/jquery.js"></script>
+    <div data-role="header">
+      <h1>Washoku</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div id="navbar">
+        <a href="./index.html" data-transition="slide">Home</a>
+        <a href="./booking.html" data-transition="slide">Booking</a>
+        <a class="active" href="./menu.html" data-transition="slide">Menu</a>
+        <a href="./gallery.html" data-transition="slide">Gallery</a>
+        <a  href="./about.html" data-transition="slide" >About</a>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <a id ="food"></a>
+      <div class="info">
+        <h1>MAKIZUSHI</h1>
+        <img src="../imagens/sushi1_f0.jpg" alt="img21"/>
+        Makizushi is a cylindrical piece, formed with the help of a bamboo mat, generally wrapped in nori. Occasionally wrapped in a thin omelette, soy paper, cucumber, or shiso (perilla) leaves. Traditionally the makizushi is served in a tray of 8 pieces, it costs 20$(USD) per serving.
+        <h1>OSHIZUSHI</h1>
+        <img src="../imagens/sushi2_f0.jpg" alt="img21"/>
+        Also known as hako-zushi is a pressed sushi from the Kansai region, a favorite and specialty of Osaka. A block-shaped piece is formed using a wooden mold, called an oshibako. The chef lines the bottom of the oshibako with the toppings, covers them with sushi rice, and then presses the lid of the mold down to create a compact, rectilinear block. All the ingredients are either cooked or cured and raw fish is never used. Costs 35$(USD) per serving.
+        <h1>NIGIRIZUSHI</h1>
+        <img src="../imagens/sushi3.jpg" alt="img21"/>
+        Nigirizushi consists of an oblong mound of sushi rice that the chef presses between the palms of the hands to form an oval-shaped ball, and a topping draped over the ball. It is usually served with a bit of wasabi; neta are typically fish such as salmon, tuna or other seafood. Certain toppings are typically bound to the rice with a thin strip of nori, most commonly octopus, freshwater eel, sea eel, squid, and sweet egg. One order of a given type of fish typically results in two pieces, while a sushi set may contain only one piece of each topping.
+        <a id ="drink"></a>
+        <h1>HIBIKI</h1>
+        <img src="../imagens/drink1_f1.jpg" alt="img21"/>
+        Hibiki is a premium blended whisky produced in Japan by Beam Suntory. It is a premium-category product, and has won several awards. For producing the blends available as of 2010, more than 30 whiskies were used in the mix, including some that were aged more than 30 years and some that were aged in old umeshu casks. A bamboo charcoal filtering step has also been used. The company said the process gives it a very sweet and gentle flavor.
+        <h1>YAMAZAKI</h1>
+        <img src="../imagens/drink0_f2.jpg" alt="img21"/>
+        Yamazaki distillery is a whisky distillery located in Shimamoto, Osaka Prefecture, Japan. Opened in 1923, and owned by Suntory, it was Japan's first commercial whisky distillery. Seven thousand bottles of unblended malt whisky are on display in its Whisky Library.Spirit ratings organizations, such as the Beverage Testing Institute and the San Francisco World Spirits Competitions, have reacted favorably to Yamazaki's offerings. Most notably, the 18-Year has earned six consecutive double gold medals at the San Francisco Spirits Competitions between 2008 and 2013. Yamazaki 25 Year Old was awarded Best Japanese Single Malt at the 2013 World Whisky Awards.
+      </div>
+    </div>
+    <div data-role="footer">
+      <div id="clock"></div>
+    </div>
+  </div>
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/menu_code.js"></script>
+</body>
+</html>
