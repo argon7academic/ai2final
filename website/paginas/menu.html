@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+  <link rel= "stylesheet" type= "text/css" href= "../css/menu_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/menu_code.js"></script>
+  <script src="../jquery/jquery.js"></script>
+</head>
+<body onload="Stick(),foodslide(),clock()">
+  <div class="content">
+    <h2>Welcome</h2>
+    <h1>Washoku Koi No Yokan</h1>
+    <h3>Redefining Japanese gastronomy</h3>
+  </div>
+  <div id="navbar">
+    <a href="../index.html">Home</a>
+    <a href="booking.html">Booking</a>
+    <a class="active" href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a  href="about.html">About</a>
+    <div class="dropdown">
+      <a class="dropbtn"><span class=".span1">English</span></a>
+      <div class="dropdown-content">
+        <a href="#" onclick="al()">Japanese</a>
+        <a href="#" onclick="al()">Chinese</a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <a href ="#scroll">
+        <span class="border">SCROLL DOWN</span>
+      </a>
+    </div>
+  </div>
+  <div class="itadakimasu">
+    ITADAKIMASU
+  </div>
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="borderinv" >馴れ寿司</span>
+    </div>
+  </div>
+  <a id ="scroll"></a>
+  <a id ="food"></a>
+  <div class="betweenbg">
+    <div class="split2 lefttop">
+      <div class="centered">
+        <div class="food_cat"></div>
+      </div>
+    </div>
+    <div class="split2 leftbot">
+      <div class="centered">
+        <div class="food_text"></div>
+        <div class="outer">
+          <a class="prev">&lt;</a>
+          <a class="next">&gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="split3 right">
+      <div class="containert">
+        <img id="slide" src="." alt=""/>
+      </div>
+    </div>
+  </div>
+  <div class="bgimg-3">
+    <div class="caption">
+      <span class="borderinv">熟寿司</span>
+    </div>
+  </div>
+  <a id ="drink"></a>
+  <div class ="betweenbg">
+    <div class="split2 righttop">
+      <div class="centered">
+        <div class="drink_cat"></div>
+      </div>
+    </div>
+    <div class="split2 rightbot">
+      <div class="centered">
+        <div class="drink_text"></div>
+        <div class="outer">
+          <a class="prev2">&lt;</a>
+          <a class="next2">&gt;</a>
+        </div>
+      </div>
+    </div>
+    <div class="split3 left">
+      <div class="containert">
+        <img id="slide2" src="." alt=""/>
+      </div>
+    </div>
+  </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <a href ="#scroll">
+        <span class="border">SCROLL BACK UP</span>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <div id="clock"></div>
+    <h3>
+      © 2018 Washoku Sushi House Follow us on
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/?lang=pt_pt" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="fa fa-pinterest"></a>
+    </h3>
+  </footer>
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/menu_code.js"></script>
+</body>
+</html>

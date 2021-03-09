@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+  <link rel= "stylesheet" type= "text/css" href= "../css/gallery_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/gallery_code.js"></script>
+  <script src="../jquery/jquery.js"></script>
+</head>
+<body onload="Stick(),clock()">
+  <div class="content">
+    <h2>Welcome</h2>
+    <h1>Washoku Koi No Yokan</h1>
+    <h3>Redefining Japanese gastronomy</h3>
+  </div>
+  <div id="navbar">
+    <a href="../index.html">Home</a>
+    <a href="booking.html">Booking</a>
+    <a href="menu.html">Menu</a>
+    <a class="active" href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <a class="dropbtn"><span class=".span1">English</span></a>
+      <div class="dropdown-content">
+        <a href="#" onclick="al()">Japanese</a>
+        <a href="#" onclick="al()">Chinese</a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="../imagens/sushi1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"  alt= "Caption text here?">
+        <div class="overlay">24 Jan 2018</div>
+        <div class="caption"></div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(2)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi3.jpg" alt="no image found" onclick="openModal();currentSlide(3)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(4)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi3.jpg" alt="no image found" onclick="openModal();currentSlide(5)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(6)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="../imagens/sushi5.jpg" alt="no image found" onclick="openModal();currentSlide(7)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(8)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(9)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(10)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi3.jpg" alt="no image found" onclick="openModal();currentSlide(11)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(12)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="../imagens/sushi1.jpg" alt="no image found" onclick="openModal();currentSlide(13)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(14)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi1.jpg" alt="no image found" onclick="openModal();currentSlide(15)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(16)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi1.jpg" alt="no image found" onclick="openModal();currentSlide(17)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(18)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <img src="../imagens/sushi3.jpg" alt="no image found" onclick="openModal();currentSlide(19)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(20)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi1.jpg" alt="no image found" onclick="openModal();currentSlide(21)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi2.jpg" alt="no image found" onclick="openModal();currentSlide(22)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi3.jpg" alt="no image found" onclick="openModal();currentSlide(23)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+      <div class="container">
+        <img src="../imagens/sushi4.jpg" alt="no image found" onclick="openModal();currentSlide(24)" class="hover-shadow" >
+        <div class="overlay">24 Jan 2018</div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt= "Caption text here?" >
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image" >
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi1.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi2.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi3.jpg" alt="no image">
+      </div>
+      <div class="mySlides">
+        <img src="../imagens/sushi4.jpg" alt="no image">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="clock"></div>
+    <h3>
+      © 2018 Washoku Sushi House Follow us on
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook" ></a>
+      <a href="https://twitter.com/?lang=pt_pt" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="fa fa-pinterest"></a>
+    </h3>
+  </footer>
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/gallery_code.js"></script>
+</body>
+</html>

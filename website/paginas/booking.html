@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "stylesheet" type= "text/css" href= "../css/styles.css">
+  <link rel= "stylesheet" type= "text/css" href= "../css/booking_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../codejs/code.js"></script>
+  <script src="../codejs/booking_code.js"></script>
+  <script src="../jquery/jquery.js"></script>
+</head>
+<body onload="Stick(),clock(),checkTime(),greetTime(),opencloseTime()">
+  <div class="content">
+    <h2>Welcome</h2>
+    <h1>Washoku Koi No Yokan</h1>
+    <h3>Redefining Japanese gastronomy</h3>
+  </div>
+  <div id="navbar">
+    <a href="../index.html">Home</a>
+    <a class="active" href="booking.html">Booking</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a  href="about.html">About</a>
+    <div class="dropdown">
+      <a class="dropbtn"><span class=".span1">English</span></a>
+      <div class="dropdown-content">
+        <a href="#" onclick="al()">Japanese</a>
+        <a href="#" onclick="al()">Chinese</a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <a href ="#scroll">
+        <span class="border">SCROLL DOWN</span>
+      </a>
+    </div>
+  </div>
+  <a id ="scroll"></a>
+  <div class="info">
+    <p>
+      Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through
+      centuries of social and economic changes. The traditional cuisine of Japan (和食 washoku) is based on
+      rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often
+      consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled,
+      but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light
+      batter, as tempura. Apart from rice, staples include noodles, such as soba and udon. Japan also has
+      many simmered dishes such as fish products in broth called oden, or beef in sukiyaki and nikujaga.
+
+      Dishes inspired by foreign food—in particular Chinese food like ramen, fried dumplings, and gyōza—as
+      well as foods like spaghetti, curry, and hamburgers have become adopted with variants for Japanese
+      tastes and ingredients. Historically, the Japanese shunned meat, but with the modernization of Japan
+      in the 1880s, meat-based dishes such as tonkatsu and yakiniku have become common. Japanese cuisine,
+      particularly sushi, has become popular throughout the world. In 2011, Japan overtook France in number
+      of Michelin-starred restaurants and has maintained the title since
+    </p>
+  </div>
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="borderinv">馴れ寿司</span>
+    </div>
+  </div>
+  <div class="betweenbg" id="bk2">
+    <div class="content2">
+      <div class="verticalFlip">
+        <span><b id="greet">XXXXXXXXXX</b></span>
+      </div>
+      <div class="verticalFlip">
+        <span><b class="silver" >we are</b></span>
+      </div>
+      <div class="verticalFlip">
+        <span><b id="openclose" class="gold">YYYYYYYYYYYYYY</b></span>
+      </div>
+      <form autocomplete="on">
+        <fieldset>
+          <legend class="legend1">Please fill out the following for a booking</legend>
+          <table>
+            <tr>
+              <td>Name:</td>
+              <td><input type="text" name="nome" size="40" placeholder="first name" pattern="[^0-9]*"/> <br /></td>
+            </tr>
+            <tr>
+              <td>Last name:</td>
+              <td><input type="text" name="sobrenome" size="40" placeholder="last name" pattern="[^0-9]*"> <br /></td>
+            </tr>
+            <tr>
+              <td> E-mail:</td>
+              <td><input type="text" name="e-mail" size="40" placeholder="e-mail here"> <br /></td>
+            </tr>
+            <tr>
+              <td><label>Phone Number</label></td>
+              <td><input type="tel" name="phone" placeholder="9xx-xxx-xxx"
+                pattern="[9][1,2,3,6][0-9]{7}|[9][1,2,3,6][0-9]-[0-9]{3}-[0-9]{3}|[9][1,2,3,6][0-9][ ][0-9]{3}[ ][0-9]{3}">
+              </td>
+            </tr>
+          </table>
+        </fieldset> <BR>
+          <fieldset>
+            <legend class="legend2">Special Requirements</legend>
+            <textarea rows="10" cols="100" placeholder="Write here">
+            </textarea> <BR>
+              <h3><input type="checkbox" name="special" value="special">Check the box if you have any requirement regarding the booking (ex: vegetarian only, no gluten, alergies,etc...). Fill out the details above.<br>
+              </h3></fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="bgimg-3">
+          <div class="caption">
+            <span class="borderinv">熟寿司</span>
+          </div>
+        </div>
+        <a id ="contact"></a>
+        <div class ="betweenbg" id="bk1">
+          <div class="content">
+            <div class="split left">
+              <div class="centered">
+                <h2>Make a booking</h2>
+                <h3>Booking type</h3>
+                <p>
+                  <select>
+                    <option value="Degustation">Degustation</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Brunch">Brunch</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                  </select>
+                </p>
+                <h3>Number of people</h3>
+                <p>
+                  <input type="number" name="quantity" min="1" max="20">
+                </p>
+                <h3>Date</h3>
+                <p>
+                  <input type="date">
+                </p>
+                <h3>Time</h3>
+                <p>
+                  <input type="time" name="usr_time">
+                </p>
+                <h3>Confirm</h3>
+                <p>
+                  <input type="submit">
+                  <input type="reset">
+                </p>
+              </div>
+            </div>
+            <div class="split center">
+              <div class="centered">
+                <h2>–Opening time–</h2><br>
+                <table class="tablecenter" >
+                  <tbody>
+                    <tr>
+                      <th>Time</th>
+                      <th>Hours</th>
+                      <th>Service</th>
+                      <th>Open/Closed</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Morning</td>
+                      <td rowspan="2">8h-12h</td>
+                      <td>Restaurant</td>
+                      <td>Open</td>
+                    </tr>
+                    <tr>
+                      <td>Bar</td>
+                      <td>Closed</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Afternoon</td>
+                      <td rowspan="2">14h-18h</td>
+                      <td>Restaurant</td>
+                      <td>Closed</td>
+                    </tr>
+                    <tr>
+                      <td>Bar</td>
+                      <td>Open</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Evening</td>
+                      <td rowspan="2">19h-24h</td>
+                      <td>Restaurant</td>
+                      <td>Open</td>
+                    </tr>
+                    <tr>
+                      <td>Bar</td>
+                      <td>Open</td>
+                    </tr>
+                  </tbody></table>
+                  <br>
+                  <h2>–Catering–</h2>
+                  <br>
+                  <ul>
+                    <li>Attendance – 50 to 500 people</li>
+                    <li>Event Date – Can't book during all of August, December 20th to January 5th.  </li>
+                    <li>Event Location – Please Contact us </li>
+                    <li>Event Description – Weddings, Partys, Hotels. We do not cater for political events.</li>
+                    <li>Budget – minimum of twenty thousand USD</li>
+                    <li>For Booking: contact us </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="split right" >
+                <ul class="ulright">
+                  <li class="li1"><i class="fa fa-phone"></i>Contact the restaurant<br>+0 000 555 0000</li>
+                  <li class="li2"><i class="fa fa-mobile"></i>Contact the owner<br>+0 000 999 0000</li>
+                  <li class="li2"><i class="fa fa-envelope"></i>Restaurant Manager:<br> Jan.Stoeckmann@ritzcarlton.com</li>
+                  <li class="li1"><i class="fa fa-envelope"></i>Contact us: <br>info@washokurestaurant.com</li>
+                  <li class="li2"><i class="fa fa-envelope"></i>Restaurant Chef: <br>fakename.fake@reallyfake.com</li>
+                  <li class="li1"><i class="fa fa-compass"></i>WASHOKU<br>The fake-fakename, FakeTown<br>181 fake St. W. Fake, ON fake fake</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bgimg-1">
+            <div class="caption">
+              <a href ="#scroll">
+                <span class="border">SCROOL UP</span>
+              </a>
+            </div>
+          </div>
+          <footer>
+            <div id="clock"></div>
+            <h3>
+              © 2018 Washoku Sushi House Follow us on
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/?lang=pt_pt" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+              <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="fa fa-pinterest"></a>
+            </h3>
+          </footer>
+          <script src="../codejs/code.js"></script>
+          <script src="../codejs/booking_code.js"></script>
+        </body>
+        </html>

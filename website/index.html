@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <title>Washoku</title>
+  <meta charset="UTF-8">
+  <meta name = "description" content ="HTML/CSS/JS">
+  <meta name ="keywords" content ="CSS,HTML,JS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "stylesheet" type= "text/css" href= "css/styles.css">
+  <link rel= "stylesheet" type= "text/css" href= "css/index_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="codejs/index_code.js"></script>
+  <script src="jquery/jquery.js"></script>
+</head>
+<body onload="Stick(),clock(),parallaxSlides()">
+  <div class="content">
+    <h2>Welcome</h2>
+    <h1>Washoku Koi No Yokan</h1>
+    <h3>Redefining Japanese gastronomy</h3>
+  </div>
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="paginas/booking.html">Booking</a>
+    <a href="paginas/menu.html">Menu</a>
+    <a href="paginas/gallery.html">Gallery</a>
+    <a href="paginas/about.html">About</a>
+    <div class="dropdown">
+      <a class="dropbtn"><span class=".span1">English</span></a>
+      <div class="dropdown-content">
+        <a href="j_index.html">Japanese</a>
+        <a href="c_index.html">Chinese</a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <a href ="#scroll">
+        <span class="border">SCROLL DOWN</span>
+      </a>
+    </div>
+  </div>
+  <a id ="scroll"></a>
+  <div class="info">
+    <p>
+      Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through
+      centuries of social and economic changes. The traditional cuisine of Japan (和食 washoku) is based on
+      rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often
+      consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled,
+      but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light
+      batter, as tempura. Apart from rice, staples include noodles, such as soba and udon. Japan also has
+      many simmered dishes such as fish products in broth called oden, or beef in sukiyaki and nikujaga.
+
+      Dishes inspired by foreign food—in particular Chinese food like ramen, fried dumplings, and gyōza—as
+      well as foods like spaghetti, curry, and hamburgers have become adopted with variants for Japanese
+      tastes and ingredients. Historically, the Japanese shunned meat, but with the modernization of Japan
+      in the 1880s, meat-based dishes such as tonkatsu and yakiniku have become common. Japanese cuisine,
+      particularly sushi, has become popular throughout the world. In 2011, Japan overtook France in number
+      of Michelin-starred restaurants and has maintained the title since
+    </p>
+  </div>
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="borderinv">馴れ寿司</span>
+    </div>
+  </div>
+  <div class="betweenbg">
+    <div class="content">
+      <div class="slidingHorizontal">
+        <span>Redefine the way you think.</span>
+        <span>Reinvent the way you eat.</span>
+        <span>Rethink the way you live.</span>
+        <span>Reevaluate the way you experience.</span>
+        <span>Reconsider the way you create.</span>
+      </div>
+      <div class="grid">
+        <a href ="paginas/menu.html#food">
+          <figure class="effect-julia">
+            <img src="./imagens/food.jpg" alt="img21"/>
+            <figcaption>
+              <h2>The <span>Food</span></h2>
+              <div>
+                <p>A true statement to the japanese</p>
+                <p>Lost art of masterfull cooking</p>
+                <p>Indefinetly perfected & refined</p>
+              </div>
+            </figcaption>
+          </figure>
+        </a>
+        <a href ="paginas/menu.html#drink">
+          <figure class="effect-julia">
+            <img src="./imagens/sake.jpg" alt="img22"/>
+            <figcaption>
+              <h2>The <span>Drink</span></h2>
+              <div>
+                <p>Unbeknownst to most , making</p>
+                <p>Spirits and Liquors are as much </p>
+                <p>A japanese tradition as Irish </p>
+              </div>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bgimg-3">
+    <div class="caption">
+      <span class="borderinv">熟寿司</span>
+    </div>
+  </div>
+  <div class ="betweenbg">
+    <div class="content">
+      <div class="horizontalFlip">
+        <span>毒 食 わ ば 皿 ま で .</span>
+        <span>Eat well, live well.</span>
+        <span>酒 は 本 心 を 表 す .</span>
+        <span> In vino veritas.   </span>
+        <span>水 に 流 す -- Flow .</span><br>
+      </div>
+      <div class="grid">
+        <a href ="paginas/booking.html#contact">
+          <figure class="effect-hera">
+            <img src="./imagens/contact.jpg" alt="img17"/>
+            <figcaption>
+              <h2>Contact <span>us</span></h2>
+            </figcaption>
+          </figure>
+        </a>
+        <a href ="paginas/about.html#locations">
+          <figure class="effect-hera">
+            <img src="./imagens/locations.jpg" alt="img25"/>
+            <figcaption>
+              <h2>Locations</h2>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <a href ="#scroll">
+        <span class="border">SCROOL BACK UP</span>
+      </a>
+    </div>
+  </div>
+  <footer>
+    <div id="clock"></div>
+    <h3>
+      © 2018 Washoku Sushi House Follow us on
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/?lang=pt_pt" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" class="fa fa-pinterest"></a>
+    </h3>
+  </footer>
+  <script src="codejs/code.js"></script>
+  <script src="codejs/index_code.js"></script>
+</body>
+</html>
